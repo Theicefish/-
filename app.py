@@ -2,7 +2,7 @@
 import pandas as pd 
 import numpy as np 
 from sklearn.metrics.pairwise import cosine_similarity 
- # 加载数据 
+ # 加载数据，此处填入csv文件的实际路径 
 movies = pd.read_csv('C:/Users/31579/Downloads/archive/ml-100k/movies.csv') 
 ratings = pd.read_csv('C:/Users/31579/Downloads/archive/ml-100k/ratings.csv')
  # 查看数据长什么样 
@@ -40,10 +40,10 @@ def get_similar_movies(movie_name, min_ratings=10):     # 通过电影名找到�
      # 我们可以简单地按相似度分数从高到低排序，并返回前10个     
     return similar_movies.sort_values(by='similarity', ascending=False).head(10) 
  # 输入你喜欢的电影，看看推荐结果！ 
-your_favorite_movie = "Forrest Gump (1994)" # 请确保电影名与数据集中的完全一致 
+your_favorite_movie = "Forrest Gump (1994)" # 确保电影名与数据集中的完全一致 
 recommendations = get_similar_movies(your_favorite_movie) 
 print(f"因为你喜欢《{your_favorite_movie}》，所以我们为你推荐：") 
-print(recommendations[['title']]) # 只打印电影名和类型   
+print(recommendations[['title']]) # 打印电影名   
 
 
 import streamlit as st
