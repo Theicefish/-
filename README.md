@@ -155,16 +155,6 @@ user_similarity = cosine_similarity(ratings_matrix)
 - **混合推荐**：结合内容过滤和协同过滤
 - **A/B测试**：比较不同算法的效果
 
-## 🤝 贡献指南
-
-我们欢迎任何形式的贡献！请参考以下步骤：
-
-1. Fork 本仓库
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个Pull Request
-
 ## 📝 更新日志
 
 ### v1.0.0 (2025-10-25)
